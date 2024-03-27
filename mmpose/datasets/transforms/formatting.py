@@ -62,11 +62,6 @@ def keypoints_to_tensor(keypoints: Union[np.ndarray, Sequence[np.ndarray]]
 
 @TRANSFORMS.register_module()
 class PackPoseInputs(BaseTransform):
-
-    from show_face_api import preprocess
-    preprocess(results['img'], results['transformed_keypoints'], results['bbox'])
-    input('任意键继续')
-
     """Pack the inputs data for pose estimation.
 
     The ``img_meta`` item is always populated. The contents of the
