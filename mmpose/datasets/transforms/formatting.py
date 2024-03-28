@@ -67,6 +67,10 @@ class PackPoseInputs(BaseTransform):
     # preprocess(results['img'], results['transformed_keypoints'], results['bbox'])
     # input('任意键继续')
 
+    print("results['img']: ",results['img'])
+    print("results['transformed_keypoints']: ",results['transformed_keypoints'])
+    print("results['bbox_scale']: ",results['bbox_scale'])
+
     """Pack the inputs data for pose estimation.
 
     The ``img_meta`` item is always populated. The contents of the
