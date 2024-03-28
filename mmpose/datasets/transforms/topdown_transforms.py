@@ -131,6 +131,8 @@ class TopdownAffine(BaseTransform):
         results['input_center'] = center
         results['input_scale'] = scale
 
+        print("TopdownAffine-input_scale: ",scale)
+
         return results
 
     def __repr__(self) -> str:

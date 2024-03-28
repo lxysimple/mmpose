@@ -160,7 +160,7 @@ class PackPoseInputs(BaseTransform):
         print("results['img']: ",results['img'])
         print("results['transformed_keypoints']: ",results['transformed_keypoints'])
         print("results['bbox_scale']: ",results['bbox_scale'])
-        input('任意键继续')
+        input('任意键继续') 
 
         """Method to pack the input data.
 
