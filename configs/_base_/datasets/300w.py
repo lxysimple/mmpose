@@ -130,5 +130,5 @@ dataset_info = dict(
             name='kpt-67', id=67, color=[255, 0, 0], type='', swap='kpt-65'),
     },
     skeleton_info={},
-    joint_weights=[1.] * 68,
+    joint_weights=[0.9] * 68,
     sigmas=[])
