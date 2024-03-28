@@ -67,9 +67,7 @@ class PackPoseInputs(BaseTransform):
     # preprocess(results['img'], results['transformed_keypoints'], results['bbox'])
     # input('任意键继续')
 
-    print("results['img']: ",results['img'])
-    print("results['transformed_keypoints']: ",results['transformed_keypoints'])
-    print("results['bbox_scale']: ",results['bbox_scale'])
+
 
     """Pack the inputs data for pose estimation.
 
@@ -158,6 +156,12 @@ class PackPoseInputs(BaseTransform):
         self.pack_transformed = pack_transformed
 
     def transform(self, results: dict) -> dict:
+
+        print("results['img']: ",results['img'])
+        print("results['transformed_keypoints']: ",results['transformed_keypoints'])
+        print("results['bbox_scale']: ",results['bbox_scale'])
+        input('任意键继续')
+
         """Method to pack the input data.
 
         Args:
